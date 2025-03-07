@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NUESTRA BODA RODRIGO & KAROL ❤️</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&family=Great+Vibes&display=swap');
+    
+    :root {
+      --primary-color: #b08968;
+      --secondary-color: #e8d4c0;
+      --accent-color: #d4af7a;
+      --text-color: #3c3c3c;
+      --light-color: #f9f6f2;
+      --dark-color: #2c2c2c;
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: var(--light-color);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+    
+    .background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), 
+                  url('/api/placeholder/800/800') center center/cover no-repeat;
+      opacity: 0.2;
+      z-index: -1;
+    }
+    
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      position: relative;
+    }
+    
+    .border-container {
+      border: 2px solid var(--primary-color);
+      border-radius: 10px;
+      padding: 40px 30px;
+      background-color: rgba(255, 255, 255, 0.95);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    }
+    
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+      border-bottom: 1px solid var(--secondary-color);
+      padding-bottom: 30px;
+    }
+    
+    .save-the-date {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 14px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: var(--accent-color);
+      margin-bottom: 15px;
+    }
+    
+    .title {
+      font-family: 'Playfair Display', serif;
+      font-size: 42px;
+      font-weight: 700;
+      color: var(--primary-color);
+      margin: 10px 0;
+      letter-spacing: 1px;
+    }
+    
+    .names {
+      font-family: 'Great Vibes', cursive;
+      font-size: 64px;
+      color: var(--dark-color);
+      margin: 20px 0 10px;
+      line-height: 1.2;
+    }
+    
+    .heart-icon {
+      color: #e74c3c;
+      margin: 0 5px;
+      animation: pulse 1.5s infinite;
+    }
+    
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+      100% { transform: scale(1); }
+    }
+    
+    .year {
+      font-family: 'Playfair Display', serif;
+      font-size: 28px;
+      font-weight: 600;
+      margin: 15px 0;
+      letter-spacing: 2px;
+      color: var(--accent-color);
+    }
+    
+    .date-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 40px 0;
+    }
+    
+    .date-circle {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      background-color: var(--primary-color);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+    
+    .day-name {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 18px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 5px;
+    }
+    
+    .day-number {
+      font-family: 'Playfair Display', serif;
+      font-size: 40px;
+      font-weight: bold;
+      line-height: 1;
+    }
+    
+    .month {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 18px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+    
+    .time {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 16px;
+      margin-top: 5px;
+    }
+    
+    .scripture {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: 20px;
+      margin: 40px auto;
+      max-width: 600px;
+      text-align: center;
+      padding: 20px;
+      border-top: 1px solid var(--secondary-color);
+      border-bottom: 1px solid var(--secondary-color);
+      color: var(--accent-color);
+    }
+    
+    .scripture-reference {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 14px;
+      font-style: normal;
+      color: var(--text-color);
+      margin-top: 10px;
+    }
+    
+    .section {
+      margin: 50px 0;
+      text-align: center;
+    }
+    
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 28px;
+      color: var(--primary-color);
+      margin-bottom: 20px;
+      position: relative;
+      display: inline-block;
+    }
+    
+    .section-title:before, .section-title:after {
+      content: "";
+      position: absolute;
+      height: 1px;
+      background-color: var(--secondary-color);
+      top: 50%;
+      width: 80px;
+    }
+    
+    .section-title:before {
+      right: 100%;
+      margin-right: 20px;
+    }
+    
+    .section-title:after {
+      left: 100%;
+      margin-left: 20px;
+    }
+    
+    .location {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 16px;
+      line-height: 1.8;
+      margin: 15px 0;
+    }
+    
+    .location-name {
+      font-weight: 600;
+      font-size: 18px;
+      margin-bottom: 5px;
+      color: var(--dark-color);
+    }
+    
+    .button {
+      display: inline-block;
+      padding: 12px 24px;
+      margin: 15px 10px;
+      background-color: var(--primary-color);
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 14px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 12px rgba(176, 137, 104, 0.3);
+    }
+    
+    .button:hover {
+      background-color: var(--dark-color);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 15px rgba(44, 44, 44, 0.3);
+    }
+    
+    .zoom-section {
+      background-color: rgba(232, 212, 192, 0.2);
+      border-radius: 10px;
+      padding: 30px;
+      max-width: 500px;
+      margin: 40px auto;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+      border: 1px dashed var(--accent-color);
+    }
+    
+    .zoom-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 22px;
+      color: var(--primary-color);
+      margin-bottom: 15px;
+    }
+    
+    .zoom-details {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 16px;
+      line-height: 1.8;
+    }
+    
+    .info-card {
+      background-color: white;
+      border-radius: 10px;
+      padding: 25px;
+      margin: 40px auto;
+      max-width: 700px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+      border-left: 4px solid var(--primary-color);
+    }
+    
+    .info-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 22px;
+      color: var(--primary-color);
+      margin-bottom: 15px;
+      text-align: center;
+    }
+    
+    .dress-code {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 30px 0;
+    }
+    
+    .dress-label {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+      color: var(--text-color);
+    }
+    
+    .dress-type {
+      font-family: 'Playfair Display', serif;
+      font-size: 28px;
+      font-weight: bold;
+      color: var(--dark-color);
+    }
+    
+    .confirmation-section {
+      margin: 50px 0;
+      text-align: center;
+    }
+    
+    .confirmation-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 24px;
+      color: var(--primary-color);
+      margin-bottom: 30px;
+    }
+    
+    .confirmation-info {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 16px;
+      margin-bottom: 20px;
+      font-weight: 500;
+    }
+    
+    .gift-section {
+      margin: 50px 0;
+      text-align: center;
+      background-color: rgba(232, 212, 192, 0.2);
+      padding: 30px;
+      border-radius: 10px;
+    }
+    
+    .gift-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 24px;
+      color: var(--primary-color);
+      margin-bottom: 15px;
+    }
+    
+    .gift-info {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 16px;
+      line-height: 1.8;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    
+    .no-kids {
+      margin: 50px auto;
+      max-width: 600px;
+      padding: 25px;
+      border: 1px solid var(--secondary-color);
+      border-radius: 10px;
+      text-align: center;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 16px;
+      line-height: 1.8;
+      background-color: white;
+    }
+    
+    .thanks {
+      font-family: 'Great Vibes', cursive;
+      font-size: 36px;
+      color: var(--primary-color);
+      margin: 40px 0 20px;
+      text-align: center;
+    }
+    
+    .couple-name {
+      font-family: 'Great Vibes', cursive;
+      font-size: 42px;
+      color: var(--dark-color);
+      margin: 30px 0;
+      text-align: center;
+    }
+    
+    @media (max-width: 768px) {
+      .title {
+        font-size: 32px;
+      }
+      
+      .names {
+        font-size: 48px;
+      }
+      
+      .date-circle {
+        width: 150px;
+        height: 150px;
+      }
+      
+      .section-title:before, .section-title:after {
+        width: 40px;
+      }
+      
+      .border-container {
+        padding: 30px 20px;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .names {
+        font-size: 36px;
+      }
+      
+      .date-circle {
+        width: 120px;
+        height: 120px;
+      }
+      
+      .day-number {
+        font-size: 32px;
+      }
+      
+      .section-title:before, .section-title:after {
+        display: none;
+      }
+      
+      .border-container {
+        padding: 20px 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="background"></div>
+  <div class="container">
+    <div class="border-container">
+      <header>
+        <div class="save-the-date">Save the date</div>
+        <h1 class="title">NUESTRA BODA</h1>
+        <div class="names">Rodrigo <i class="fas fa-heart heart-icon"></i> Karol</div>
+        <div class="year">2024</div>
+      </header>
+      
+      <div class="date-section">
+        <div class="date-circle">
+          <div class="day-name">SÁBADO</div>
+          <div class="day-number">20</div>
+          <div class="month">JULIO</div>
+          <div class="time">12:30 PM</div>
+        </div>
+      </div>
+      
+      <div class="scripture">
+        "Mejor son dos que uno solo"
+        <div class="scripture-reference">(Eclesiastés 4:9)</div>
+      </div>
+      
+      <div class="section ceremony-section">
+        <h2 class="section-title">Discurso Bíblico</h2>
+        <div class="location">
+          <div class="location-name">Salón del Reino de los Testigos de Jehová</div>
+          Av. Ernesto Céspedes, entre c/Gral. pando y c/primero mayo
+        </div>
+        <a href="#" class="button"><i class="fas fa-map-marker-alt"></i> Ver Ubicación</a>
+      </div>
+      
+      <div class="zoom-section">
+        <h3 class="zoom-title"><i class="fas fa-video"></i> ZOOM</h3>
+        <div class="zoom-details">
+          <strong>ID de Reunión:</strong> 9327953637<br>
+          <strong>CONTRASEÑA:</strong> 237801
+        </div>
+        <div>
+          <a href="#" class="button"><i class="fas fa-link"></i> Link de Zoom</a>
+        </div>
+      </div>
+      
+      <div class="section reception-section">
+        <h2 class="section-title">Recepción</h2>
+        <div class="location">
+          <div class="location-name">Salón de Eventos "PLATINIUM"</div>
+          Av. Blanco Galindo km 5 ½ frente Surtidor Islas.
+        </div>
+        <a href="#" class="button"><i class="fas fa-map-marker-alt"></i> Ver Ubicación</a>
+      </div>
+      
+      <div class="info-card">
+        <div class="dress-code">
+          <div class="dress-label">Código de Vestimenta</div>
+          <div class="dress-type">FORMAL</div>
+        </div>
+        
+        <div class="time-info">
+          <div class="info-title"><i class="far fa-clock"></i> Inicio de la Fiesta</div>
+          <div class="dress-type">18:00 PM</div>
+        </div>
+      </div>
+      
+      <div class="confirmation-section">
+        <h3 class="confirmation-title">Agradecemos y esperamos la confirmación de tu asistencia</h3>
+        <div class="confirmation-info">CONFIRMACIÓN:</div>
+        <a href="#" class="button"><i class="fas fa-envelope"></i> Confirmar a Rodrigo</a>
+        <a href="#" class="button"><i class="fas fa-envelope"></i> Confirmar a Karol</a>
+      </div>
+      
+      <div class="gift-section">
+        <h3 class="gift-title"><i class="fas fa-gift"></i> Sugerencia de Regalo</h3>
+        <div class="gift-info">
+          Deseas darnos un regalo y ¿no sabes cuál? , te facilitamos estas opciones:<br>
+          También habrá en la mesa de los novios una caja con sobres
+        </div>
+      </div>
+      
+      <div class="no-kids">
+        <i class="fas fa-child" style="font-size: 24px; color: var(--primary-color); margin-bottom: 15px;"></i><br>
+        SABEMOS QUE SUS HIJOS SON IMPORTANTES,<br>
+        PERO CONSIDERAMOS QUE NECESITAN UNA<br>
+        NOCHE LIBRE. NO NIÑOS, POR FAVOR.<br>
+        SE LES AGRADECE LA COMPRENSIÓN
+      </div>
+      
+      <div class="thanks">¡Muchas Gracias!</div>
+      
+      <div class="couple-name">Karol y Rodrigo</div>
+    </div>
+  </div>
+</body>
+</html>
